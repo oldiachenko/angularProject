@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UsersComponent } from './components/users/users.component';
 import { UserComponent } from './components/user/user.component';
+import { PostComponent } from './components/post/post.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { CommentsComponent } from './components/comments/comments.component';
+import { CommentComponent } from './components/comment/comment.component';
 
 
 @NgModule({
@@ -13,6 +17,10 @@ import { UserComponent } from './components/user/user.component';
     AppComponent,
     UsersComponent,
     UserComponent,
+    PostComponent,
+    PostsComponent,
+    CommentsComponent,
+    CommentComponent,
   ],
   imports: [
     BrowserModule,

@@ -10,13 +10,16 @@ export class UserComponent implements OnInit {
   @Input()
   user!: User;
   @Output()
-  bubbleUp = new EventEmitter <User> ();
-  constructor() { }
+  bubbleUp = new EventEmitter<User>();
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
+
   getUserInfo(user: User): void {
-this.bubbleUp.emit(user);
+    this.bubbleUp.emit(user);
   }
 
 }
