@@ -1,0 +1,5 @@
+<div *ngIf="post.userId === +userId">
+  {{post.id}} - {{post.title}}
+  <button (click)="goToPostText()">Post info</button>
+</div>
+<router-outlet></router-outlet>

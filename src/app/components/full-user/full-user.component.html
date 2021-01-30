@@ -1,0 +1,9 @@
+<hr/>
+<div>
+  <p>Name: {{user.name}}, Username: {{user.username}}</p>
+  <p>User address: {{user.address.city}}, {{user.address.street}}, {{user.address.suite}}</p>
+  <p>User company: {{user.company.name}}</p>
+  <p><button (click)="goToPost()">User posts</button></p>
+</div>
+
+<router-outlet></router-outlet>
