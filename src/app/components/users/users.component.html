@@ -1,0 +1,23 @@
+<form [formGroup]="userForm" (ngSubmit)="addUser()">
+  <label>Name*: </label>
+  <br/>
+  <input [formControl]="name">
+  <br/>
+  <label>Age*:</label>
+  <br/>
+  <input [formControl]="age" >
+  <br/>
+  <label>E-mail*:</label>
+  <br/>
+  <input [formControl]="email" >
+  <br/>
+  <label>City: </label>
+  <br/>
+  <input [formControl]="city">
+  <br/>
+  <button [disabled]="!userForm.valid">add user</button>
+</form>
+
+<div *ngFor="let user of users">
+  <app-user [user]="user"></app-user>
+</div>
